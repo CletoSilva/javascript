@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            color: white;
+            font-size: 2rem;
+            text-align: center;
+            line-height: 170px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="caixa">
+        Interaja...
+    </div>
+
+    <script>
+        let caixa = document.getElementById('caixa');
+        let repetir; // Variável para armazenar o ID do timeout
+
+        caixa.addEventListener('mouseenter', function (event) {
+            caixa.innerHTML = 'Entrou!';
+        });
+
+        caixa.addEventListener('click', function (event) {
+            caixa.innerHTML = 'Clicou!';
+            caixa.style.background = 'red';
+        });
+
+        caixa.addEventListener('mouseout', function (event) {
+            caixa.innerHTML = 'Saiu!';
+            caixa.style.background = 'green';
+
+            // Limpa qualquer timeout existente antes de definir um novo
+            clearTimeout(repetir);
+
+            // Define um timeout para mudar o texto e a cor de fundo após 2 segundos
+            repetir = setTimeout(function () {
+                caixa.innerHTML = 'Interaja...';
+                caixa.style.background = 'green';
+            }, 2000);
+        });
+    </script>
+</body>
+
+</html>
