@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+    <style>
+        #velocidade {
+            width: 5rem;
+            margin: .5rem;
+        }
+
+        button {
+            margin-left: .4rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    <p>Velocidade do carro
+        <input type="number" name="velocidade" id="velocidade">Km/h
+        <button onclick="verificar()">Verificar</button>
+    </p>
+    <div id="resultado"></div>
+
+    <script>
+        let velocidade = document.getElementById('velocidade');
+        let resultado = document.getElementById('resultado')
+
+        function verificar() {
+            velocidade = Number(document.getElementById('velocidade').value);
+
+            resultado.innerHTML = `<p>Sua velocidade atual é de <strong>${velocidade}m/h</strong>.</p>`
+
+            if (velocidade > 60) {
+            resultado.innerHTML += `<p>Você foi <strong>MULTADO</strong>`
+            };
+
+            resultado.innerHTML += 'dirija sempre com cinto de segurança' 
+        };
+    </script>
+</body>
+</html>

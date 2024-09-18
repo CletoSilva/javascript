@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <p>Digite o país para saber se você é brasileiro</p>
+    <input type="text" name="local" id="local">
+    <button id="button" onclick="enviar()">Enviar</button>
+    <div id="resultado"></div>
+  
+    <script>
+      function enviar() {
+        let countryInput = document.getElementById('local'); // Obtém o elemento input
+        let countryValue = countryInput.value.toLowerCase(); // Obtém o valor digitado e converte para minúsculas para comparação case-insensitive
+        let resultado = document.getElementById('resultado');
+  
+        // Limpa o conteúdo anterior do elemento resultado
+        resultado.textContent = '';
+  
+        if (countryValue != 'brasil') {
+            resultado.textContent = 'Você é Estrangeiro';
+        } else {
+            resultado.textContent = 'Você é Brasileiro';
+        }
+      }
+    </script>
+  </body>
+</html>
