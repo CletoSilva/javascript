@@ -1,4 +1,4 @@
-/* Outra forma de fazer usando Array
+/* Outra forma de fazer usando Array..
 
 let diasDaSemana = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
 
