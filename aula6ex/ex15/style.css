@@ -12,12 +12,21 @@ main {
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
-    width: 500px;
+    width: 700px;
     margin: auto;
 }
 
 section {
     padding: 20px;
+    
+}
+
+section div {
+    padding: 5px;
+}
+
+#formulario {
+    margin-bottom: 10px;
 }
 
 footer {
