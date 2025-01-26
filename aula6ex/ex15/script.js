@@ -2,13 +2,13 @@ function verificar() {
     let data = new Date();
     let ano = data.getFullYear();
     let anoDeNasc = document.getElementById("ano").value;
-    let resul = document.querySelector("div#res");
+    let resul = document.getElementById("res");
 
-    if (anoDeNasc.length == 0 || Number(anoDeNasc) > ano) {
+    if (anoDeNasc.length == 0 || anoDeNasc > ano) {
         alert("[ERRO] Verifique os dados e tente novamente!");
     } else {
         let sex = document.getElementsByName("sexo");
-        let idade = ano - Number(anoDeNasc);
+        let idade = ano - anoDeNasc;
         let genero = "";
         let img = document.createElement("img");
         img.setAttribute("id", "foto");

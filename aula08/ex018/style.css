@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(78, 142, 236);
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+main {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
+    width: 500px;
+    margin: auto;
+}
+
+section {
+    padding: 20px;
+}
+
+select {
+    width: 150px;
+    height: 200px;
+    -webkit-appearance: none; /* Remove a aparência padrão do select */
+    -moz-appearance: none;
+    appearance: none;
+    padding: 10px 20px; /* Adiciona um padding para tornar o elemento maior */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    
+  }
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic
+}
