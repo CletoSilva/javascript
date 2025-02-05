@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tabuada</title>
+</head>
+<body>
+    <header>
+        <h1>Tabuada</h1>
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <p>
+                    <label for="numero">Número (entre 1 a 100): </label>
+                    <input type="number" name="numero" 
+                    id="numero">
+                    <button onclick="gerar()">Gerar tabuada</button>
+                </p>
+            </div>
+
+            <div id="valores">
+                <select name="tabuada" id="tabuada" size="10">
+                    
+                </select>
+                <button onclick="finalizar()">Finalizar</button>
+            </div>
+            <div id="res">
+                
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Todos o direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
